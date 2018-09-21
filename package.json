@@ -8,6 +8,7 @@
     "npm": "6.4.1"
   },
   "scripts": {
+    "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate",
     "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "author": "Laurence Howells",
